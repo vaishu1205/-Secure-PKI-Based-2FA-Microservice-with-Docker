@@ -1,0 +1,27 @@
+﻿=== DIAGNOSTIC START 2025-12-10T11:07:09.9606552+05:30 ===
+PWD: D:\-Secure-PKI-Based-2FA-Microservice-with-Docker
+PowerShell Version: 5.1.26100.7019
+
+Checking required files:
+student_public.pem exists: True
+student_public_escaped.txt exists: True
+Escaped key length: 816
+Escaped key preview (first 200 chars):
+-----BEGIN PUBLIC KEY-----\nMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAmrMOgwCgyurslqZFMbGr\nD9CkoKdBpHFfJTq4p16jiCmEFrO3BPPOPXG17Pxm8ZbgB6v2TuHbVUwbCSlhcQ9l\noF1NoQLUo/Mrxj33micAmAydsAxxsLc3GXoOikUn
+
+Running Test-NetConnection to eajeyq4r3zljoq4rpovy2nthda0vtjqf.lambda-url.ap-south-1.on.aws on port 443...
+TcpTestSucceeded: True
+RemoteAddress: 65.0.254.30
+
+API_URL: https://eajeyq4r3zljoq4rpovy2nthda0vtjqf.lambda-url.ap-south-1.on.aws
+STUDENT_ID: 22P31A1205
+GIT_URL: https://github.com/vaishu1205/-Secure-PKI-Based-2FA-Microservice-with-Docker
+JSON payload length: 1799
+Attempting POST request...
+
+EXCEPTION: System.Net.WebException
+Message: The remote server returned an error: (400) Bad Request.
+HTTP Response Body:
+
+
+=== DIAGNOSTIC END ===

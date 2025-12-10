@@ -1,0 +1,20 @@
+# Do NOT commit encrypted_seed.txt
+encrypted_seed.txt
+
+
+# Python
+__pycache__/
+*.pyc
+
+
+# env files
+.env
+
+
+# IDE
+.vscode/
+.idea/
+
+
+# local docker-compose overrides
+docker-compose.override.ymlencrypted_seed.txt
