@@ -1,4 +1,4 @@
-!/usr/bin/env bash
+#!/usr/bin/env bash
 set -e
 if [ ! -d /data ]; then
   mkdir -p /data
@@ -8,3 +8,4 @@ if [ ! -d /cron ]; then
 fi
 service cron start || /etc/init.d/cron start || (cron &)
 exec uvicorn app.main:app --host 0.0.0.0 --port 8080 --proxy-headers
+
