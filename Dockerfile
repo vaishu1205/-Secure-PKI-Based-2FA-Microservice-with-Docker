@@ -19,6 +19,6 @@ RUN chmod 644 /app/student_public.pem /app/instructor_public.pem || true
 RUN chmod +x /app/start.sh || true
 COPY cron/2fa-cron /etc/cron.d/2fa-cron
 RUN chmod 0644 /etc/cron.d/2fa-cron
-RUN crontab /etc/cron.d/2fa-cron
+# DO NOT run `crontab` on system /etc/cron.d files; the daemon reads them automatically.
 EXPOSE 8080
 CMD ["./start.sh"]
