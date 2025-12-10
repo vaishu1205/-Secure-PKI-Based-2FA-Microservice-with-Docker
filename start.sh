@@ -9,3 +9,4 @@ fi
 service cron start || /etc/init.d/cron start || (cron &)
 exec uvicorn app.main:app --host 0.0.0.0 --port 8080 --proxy-headers
 
+
