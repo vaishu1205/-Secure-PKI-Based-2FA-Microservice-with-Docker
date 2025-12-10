@@ -1,4 +1,4 @@
-﻿#!/usr/bin/env bash
+!/usr/bin/env bash
 set -e
 if [ ! -d /data ]; then
   mkdir -p /data
